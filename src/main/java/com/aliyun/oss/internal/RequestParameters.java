@@ -49,6 +49,11 @@ public final class RequestParameters {
     public static final String SUBRESOURCE_END_TIME = "endTime";
     public static final String SUBRESOURCE_PROCESS_CONF = "processConfiguration";
     public static final String SUBRESOURCE_PROCESS = "x-oss-process";
+    public static final String SUBRESOURCE_CSV_SELECT = "csv/select";
+    public static final String SUBRESOURCE_CSV_META = "csv/meta";
+    public static final String SUBRESOURCE_JSON_SELECT = "json/select";
+    public static final String SUBRESOURCE_JSON_META = "json/meta";
+    public static final String SUBRESOURCE_SQL = "sql";
     public static final String SUBRESOURCE_SYMLINK = "symlink";
     public static final String SUBRESOURCE_STAT = "stat";
     public static final String SUBRESOURCE_RESTORE = "restore";
@@ -76,9 +81,6 @@ public final class RequestParameters {
     public static final String PART_NUMBER_MARKER = "part-number-marker";
     public static final String RULE_ID = "rule-id";
 
-    public static final String SIGNATURE = "Signature";
-    public static final String OSS_ACCESS_KEY_ID = "OSSAccessKeyId";
-
     public static final String SECURITY_TOKEN = "security-token";
 
     public static final String POSITION = "position";
@@ -95,5 +97,16 @@ public final class RequestParameters {
     public static final String PLAYLIST_NAME = "playlistName";
     public static final String SINCE = "since";
     public static final String TAIL = "tail";
+
+    /*  V1 signature params */
+    public static final String SIGNATURE = "Signature";
+    public static final String OSS_ACCESS_KEY_ID = "OSSAccessKeyId";
+
+    /*  V2 signature params */
+    public static final String OSS_SIGNATURE_VERSION = "x-oss-signature-version";
+    public static final String OSS_EXPIRES = "x-oss-expires";
+    public static final String OSS_ACCESS_KEY_ID_PARAM = "x-oss-access-key-id";
+    public static final String OSS_ADDITIONAL_HEADERS = "x-oss-additional-headers";
+    public static final String OSS_SIGNATURE = "x-oss-signature";
 
 }

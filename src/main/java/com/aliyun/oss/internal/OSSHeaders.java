@@ -31,6 +31,7 @@ public interface OSSHeaders extends HttpHeaders {
     static final String OSS_VERSION_ID = "x-oss-version-id";
 
     static final String OSS_SERVER_SIDE_ENCRYPTION = "x-oss-server-side-encryption";
+    static final String OSS_SERVER_SIDE_ENCRYPTION_KEY_ID = "x-oss-server-side-encryption-key-id";
 
     static final String GET_OBJECT_IF_MODIFIED_SINCE = "If-Modified-Since";
     static final String GET_OBJECT_IF_UNMODIFIED_SINCE = "If-Unmodified-Since";
@@ -80,4 +81,12 @@ public interface OSSHeaders extends HttpHeaders {
     static final String OSS_ONGOING_RESTORE = "ongoing-request=\"true\"";
 
     static final String OSS_BUCKET_REGION = "x-oss-bucket-region";
+
+    static final String OSS_SELECT_PREFIX = "x-oss-select";
+    static final String OSS_SELECT_CSV_ROWS = OSS_SELECT_PREFIX + "-csv-rows";
+    static final String OSS_SELECT_OUTPUT_RAW = OSS_SELECT_PREFIX + "-output-raw";
+    static final String OSS_SELECT_CSV_SPLITS = OSS_SELECT_PREFIX + "-csv-splits";
+    static final String OSS_SELECT_INPUT_LINE_RANGE = OSS_SELECT_PREFIX + "-line-range";
+    static final String OSS_SELECT_INPUT_SPLIT_RANGE = OSS_SELECT_PREFIX + "-split-range";
+
 }
